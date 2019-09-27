@@ -1,13 +1,19 @@
 package com.vinu.swaggerwithspringboot.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description = "This is a description of this POJO")
 public class User {
 
+	@ApiModelProperty(notes = "Here we can add the use of the variable")
 	private String firstname;
+	@ApiModelProperty(notes = "Here we can add the use of the variable")
 	private String lastname;
+	@ApiModelProperty(notes = "Here we can add the use of the variable")
 	private long mobile;
+	@ApiModelProperty(notes = "Here we can add the use of the variable")
 	private String city;
-	
-	
 	
 	public User() {
 		super();
